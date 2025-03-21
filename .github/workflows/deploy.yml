@@ -22,7 +22,7 @@ jobs:
 
       - name: Remove placeholder content
         working-directory: ./sidewinder
-        run: rm -r content/ static/ content.html
+        run: rm -r content/ static/ template.html
 
       - name: Populate content, static, and template
         run: cp -r content static template.html -t $GITHUB_WORKSPACE/sidewinder
